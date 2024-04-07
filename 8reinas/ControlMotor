@@ -1,0 +1,29 @@
+import time
+def encender_motor():
+    print("Motor encendido")
+def apagar_motor():
+    print("Motor apagado")
+def girar_derecha():
+    print("Motor girando a la derecha")
+def girar_izquierda():
+    print("Motor girando a la izquierda")
+
+def main():
+    while True:
+        comando = input("Ingrese '1' para encender el motor, '2' para apagarlo, 'd' para girar a la derecha, 'i' para girar a la izquierda, o 'salir' para cerrar: ")
+        if comando == "1":
+            encender_motor()
+        elif comando == "2":
+            apagar_motor()
+        elif comando == "d":
+            girar_derecha()
+        elif comando == "i":
+            girar_izquierda()
+        elif comando == "salir":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Comando no reconocido, Ingrese '1' para encender el motor, '2' para apagarlo, 'd' para girar a la derecha, 'i' para girar a la izquierda, o 'salir' para cerrar:")
+
+if __name__ == "__main__":
+    main()
